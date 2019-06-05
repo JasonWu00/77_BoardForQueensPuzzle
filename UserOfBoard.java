@@ -62,37 +62,37 @@ public class UserOfBoard {
         // ----- next incremental step ends here -----
 
 
-        // System.out.println(
-          // "Remove the queen from the most-recently-populated rank.");
-        // b.depopulate( );
-        // System.out.println( b + System.lineSeparator());
-        // // ----- next incremental step ends here -----
+        System.out.println(
+          "Remove the queen from the most-recently-populated rank.");
+        b.depopulate( );
+        System.out.println( b + System.lineSeparator());
+        // ----- next incremental step ends here -----
 
 
-        // System.out.println( "Add a queen to an already-populated file.");
-        // b.populate( 0);
-        // System.out.println( b + System.lineSeparator());
+        System.out.println( "Add a queen to an already-populated file.");
+        b.populate( 0);
+        System.out.println( b + System.lineSeparator());
 
-        // System.out.println( "no solution could start with "
-                          // + "sharing a file: "
-                          // + b.lastIsNg()
-                          // + " ...expecting true"
-                          // + System.lineSeparator());
-        // // ----- next incremental step ends here -----
+        System.out.println( "no solution could start with "
+                          + "sharing a file: "
+                          + b.lastIsNg()
+                          + " ...expecting true"
+                          + System.lineSeparator());
+        // ----- next incremental step ends here -----
 
 
-        // System.out.println(
-          // "\"Move\" a queen to the south-east diagonal.");
-        // b.depopulate();
-        // b.populate( 1);
-        // System.out.println( b + System.lineSeparator());
+        System.out.println(
+          "\"Move\" a queen to the south-east diagonal.");
+        b.depopulate();
+        b.populate( 1);
+        System.out.println( b + System.lineSeparator());
 
-        // System.out.println( "no solution could start with "
-                          // + "sharing a south-east diagonal: "
-                          // + b.lastIsNg()
-                          // + " ...expecting true"
-                          // + System.lineSeparator());
-        // // ----- next incremental step ends here -----
+        System.out.println( "no solution could start with "
+                          + "sharing a south-east diagonal: "
+                          + b.lastIsNg()
+                          + " ...expecting true"
+                          + System.lineSeparator());
+        // ----- next incremental step ends here -----
 
 
         // System.out.println( "Restart, with queen in SW diagonal.");

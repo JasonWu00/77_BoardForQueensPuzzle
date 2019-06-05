@@ -42,11 +42,12 @@ public class BoardForQueensPuzzle {
                      no queen attacked another.
      */
     public boolean lastIsNg() {
-      boolean output = true;
+      boolean output = false;
       if (lastRankFilled <= 0) output = false;
       else {
         int positionOfLastPlacedQueen = filesWithQueens[lastRankFilled];
-        for (int index = lastRankFilled+1; index >=0; index--) {
+        System.out.println("Last queen at " + positionOfLastPlacedQueen);
+        for (int index = lastRankFilled-1; index >=0; index--) {
           if (filesWithQueens[index] == positionOfLastPlacedQueen) output = true;
         }
       }
@@ -86,6 +87,8 @@ public class BoardForQueensPuzzle {
       @precondition: Some rank(s) have been populated.
      */
     public void depopulate() {
+      filesWithQueens[lastRankFilled+1] = -1;
+      lastRankFilled--;
     }
 
 
